@@ -5890,10 +5890,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Find it out!",
+      "string": "Click objects with the name in the table below",
       "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 70,
+      "characterSize": 25,
       "color": {
         "b": 255,
         "g": 255,
@@ -5913,10 +5913,10 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Find it out!",
+        "text": "Click objects with the name in the table below",
         "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
         "textAlignment": "left",
-        "characterSize": 70,
+        "characterSize": 25,
         "color": "255;255;255"
       }
     },
@@ -7581,174 +7581,6 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "23aac4ad9b960a7dac96486599a6a1d803223bd3f33f52b55f301392fc786d3b",
-      "name": "Stone2",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "No Shadow",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Stone_No Shadow.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 4
-                      },
-                      {
-                        "x": 29,
-                        "y": 4
-                      },
-                      {
-                        "x": 29,
-                        "y": 29
-                      },
-                      {
-                        "x": 3,
-                        "y": 29
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Shadow",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Stone_Shadow.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 4
-                      },
-                      {
-                        "x": 29,
-                        "y": 4
-                      },
-                      {
-                        "x": 29,
-                        "y": 29
-                      },
-                      {
-                        "x": 3,
-                        "y": 29
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "f1bd213445ca88e13a5d5f461afc4e3a3df7aff460da637a02f52b836af27c7a",
-      "name": "Stone",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Stone.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 0
-                      },
-                      {
-                        "x": 16,
-                        "y": 16
-                      },
-                      {
-                        "x": 0,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "NewSprite5",
       "type": "Sprite",
@@ -7807,6 +7639,47 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "level",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Level : ",
+      "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Level : ",
+        "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -7897,16 +7770,13 @@
         "objectName": "Cactus"
       },
       {
-        "objectName": "Stone"
-      },
-      {
         "objectName": "BronzeCoin"
       },
       {
-        "objectName": "NewSprite5"
+        "objectName": "level"
       },
       {
-        "objectName": "Stone2"
+        "objectName": "NewSprite5"
       },
       {
         "objectName": "bang"
@@ -7962,6 +7832,12 @@
     },
     {
       "folded": true,
+      "name": "speed1",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
       "name": "coin_vang",
       "type": "number",
       "value": 8
@@ -7977,12 +7853,6 @@
       "name": "coin_dong",
       "type": "number",
       "value": 3
-    },
-    {
-      "folded": true,
-      "name": "checklevel",
-      "type": "number",
-      "value": 0
     }
   ],
   "layouts": [
@@ -8612,7 +8482,7 @@
               "parameters": [
                 "",
                 "mouse-click-153941.mp3",
-                "",
+                "yes",
                 "40",
                 ""
               ]
@@ -10168,7 +10038,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311541,
+        "zoomFactor": 0.7370816317994111,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -10208,7 +10078,7 @@
           "name": "NewSprite",
           "persistentUuid": "d23c2d90-2eab-4cd4-8425-cf6e8798255e",
           "width": 612,
-          "x": 609,
+          "x": 604,
           "y": 136,
           "zOrder": 5,
           "numberProperties": [],
@@ -10225,8 +10095,8 @@
           "name": "Door",
           "persistentUuid": "e6456cad-6259-459d-8f1a-4807f3ec0c0e",
           "width": 86,
-          "x": 1811,
-          "y": 340,
+          "x": 1565,
+          "y": 339,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -10258,8 +10128,8 @@
           "layer": "",
           "name": "huongdan",
           "persistentUuid": "9ffdb5ca-7513-44e4-b87d-431485799c6c",
-          "width": 2897,
-          "x": -830,
+          "width": 3202,
+          "x": -912,
           "y": 242,
           "zOrder": 13,
           "numberProperties": [],
@@ -10327,8 +10197,8 @@
           "name": "Next",
           "persistentUuid": "b8493ea6-150c-4b87-a790-2236f631bc76",
           "width": 45,
-          "x": 2042,
-          "y": 215,
+          "x": 2298,
+          "y": 228,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -10412,7 +10282,7 @@
           "name": "NewSprite",
           "persistentUuid": "16b74a35-8638-4b04-a88c-3c7cc5a46ac5",
           "width": 612,
-          "x": 3657,
+          "x": 3665,
           "y": 136,
           "zOrder": 5,
           "numberProperties": [],
@@ -10429,7 +10299,7 @@
           "name": "NewSprite",
           "persistentUuid": "6171741d-afab-40bb-8f62-a1a24a5b080a",
           "width": 612,
-          "x": 4268,
+          "x": 4276,
           "y": 136,
           "zOrder": 5,
           "numberProperties": [],
@@ -10446,7 +10316,7 @@
           "name": "GoldCoin",
           "persistentUuid": "ab325b35-1d87-4d04-a8ae-469c8247a4a8",
           "width": 29,
-          "x": 1568,
+          "x": 981,
           "y": 384,
           "zOrder": 19,
           "numberProperties": [],
@@ -10463,7 +10333,7 @@
           "name": "BronzeCoin",
           "persistentUuid": "f82f081d-a539-4b1c-9268-7c82a37a6d25",
           "width": 27,
-          "x": 992,
+          "x": 405,
           "y": 384,
           "zOrder": 20,
           "numberProperties": [],
@@ -10480,7 +10350,7 @@
           "name": "SilverCoin",
           "persistentUuid": "8c261ab1-35b2-45f7-8c7d-3365208b072f",
           "width": 26,
-          "x": 1318,
+          "x": 731,
           "y": 384,
           "zOrder": 21,
           "numberProperties": [],
@@ -10496,7 +10366,7 @@
           "name": "dong_3",
           "persistentUuid": "9ae214a9-dc9f-40da-99ab-88a18aa04b56",
           "width": 0,
-          "x": 976,
+          "x": 389,
           "y": 354,
           "zOrder": 22,
           "numberProperties": [],
@@ -10512,7 +10382,7 @@
           "name": "bac_5",
           "persistentUuid": "b85b8fd0-65ee-42c6-9ddb-29e80adc3fd4",
           "width": 0,
-          "x": 1306,
+          "x": 719,
           "y": 356,
           "zOrder": 23,
           "numberProperties": [],
@@ -10529,7 +10399,7 @@
           "name": "vang_8",
           "persistentUuid": "2cb05f4e-379f-424e-8e40-27ae831702a3",
           "width": 40,
-          "x": 1555,
+          "x": 968,
           "y": 358,
           "zOrder": 24,
           "numberProperties": [],
@@ -12140,7 +12010,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.5804687500000327,
+        "zoomFactor": 2.4323477282328807,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -12159,23 +12029,6 @@
         }
       ],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "nhan_vat",
-          "persistentUuid": "0b45b198-50a3-47e2-b414-50cb474c3aa7",
-          "width": 49,
-          "x": 64,
-          "y": 22,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": false,
@@ -12218,8 +12071,8 @@
           "name": "NewSprite2",
           "persistentUuid": "240a0443-0714-4582-ba60-921a1bc187f1",
           "width": 164,
-          "x": 0,
-          "y": 0,
+          "x": 604,
+          "y": -135,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -12251,7 +12104,7 @@
           "name": "NewSprite3",
           "persistentUuid": "5cc36690-5847-4f6e-bf79-490415e3203f",
           "width": 170,
-          "x": 0,
+          "x": -2,
           "y": 173,
           "zOrder": 16,
           "numberProperties": [],
@@ -12379,7 +12232,7 @@
           "width": 164,
           "x": 163,
           "y": -3,
-          "zOrder": 14,
+          "zOrder": -4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12396,7 +12249,7 @@
           "width": 164,
           "x": 327,
           "y": -2,
-          "zOrder": 14,
+          "zOrder": -5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12692,8 +12545,8 @@
           "name": "NewSprite2",
           "persistentUuid": "12906d12-62fb-4002-89bd-6fa8353e025b",
           "width": 164,
-          "x": -164,
-          "y": -1,
+          "x": 158,
+          "y": 172,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -12725,8 +12578,8 @@
           "name": "NewSprite4",
           "persistentUuid": "54dcd193-fd2d-465f-94b2-a0b2716a0330",
           "width": 0,
-          "x": -256,
-          "y": 339,
+          "x": -258,
+          "y": 338,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -12742,7 +12595,7 @@
           "name": "NewSprite2",
           "persistentUuid": "228861d8-289d-4a1f-8f0e-4f17bf16ab1a",
           "width": 164,
-          "x": 818,
+          "x": 821,
           "y": 3,
           "zOrder": 14,
           "numberProperties": [],
@@ -12817,40 +12670,6 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 12,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "6c35b5b4-b633-458f-ad2e-146a2b6ff081",
-          "width": 13,
-          "x": 55,
-          "y": 327,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "72e143f9-a707-461d-b7ea-4096e109b702",
-          "width": 14,
-          "x": 97,
-          "y": 252,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 90,
           "customSize": true,
           "depth": 1,
@@ -12877,9 +12696,9 @@
           "name": "NewSprite2",
           "persistentUuid": "99ed2c99-9c80-47b5-94db-86583c0b9c81",
           "width": 164,
-          "x": 20,
-          "y": -169,
-          "zOrder": 14,
+          "x": 5,
+          "y": -1,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12895,8 +12714,8 @@
           "persistentUuid": "3647d99c-b0f7-4bf6-97e4-4be613113bc6",
           "width": 164,
           "x": -140,
-          "y": -161,
-          "zOrder": 14,
+          "y": -165,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12911,9 +12730,9 @@
           "name": "NewSprite2",
           "persistentUuid": "7f940a7b-be80-47ab-9289-2566230ef989",
           "width": 164,
-          "x": 181,
-          "y": -171,
-          "zOrder": 14,
+          "x": 371,
+          "y": -60,
+          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12930,7 +12749,7 @@
           "width": 164,
           "x": -270,
           "y": -171,
-          "zOrder": 14,
+          "zOrder": -3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12945,9 +12764,9 @@
           "name": "NewSprite2",
           "persistentUuid": "8de68038-44b9-488b-a3de-8b5180a04cc1",
           "width": 164,
-          "x": 344,
-          "y": -175,
-          "zOrder": 14,
+          "x": 666,
+          "y": -119,
+          "zOrder": -2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12964,6 +12783,57 @@
           "x": 51,
           "y": 11,
           "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 174,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite2",
+          "persistentUuid": "d09de792-bf87-444e-8149-7794aa47d1fb",
+          "width": 164,
+          "x": -154,
+          "y": 9,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "2c53847d-3683-4d02-8178-51a6a6027e6d",
+          "width": 10,
+          "x": 98,
+          "y": 255,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Cactus",
+          "persistentUuid": "abc1e0ac-77c7-4321-8d4d-ba991817ee0c",
+          "width": 8,
+          "x": 57,
+          "y": 326,
+          "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13020,7 +12890,7 @@
               "parameters": [
                 "",
                 "pixel-song-21-72593.mp3",
-                "",
+                "yes",
                 "10",
                 "0.9"
               ]
@@ -13031,6 +12901,26 @@
               },
               "parameters": [
                 "NewSprite5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "thời_gian",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "xu",
+                "=",
+                "0"
               ]
             }
           ]
@@ -14414,8 +14304,8 @@
           "name": "NewSprite3",
           "persistentUuid": "2eda29c6-8b36-44ee-9cbd-50da4a265ef1",
           "width": 0,
-          "x": 1090,
-          "y": -4,
+          "x": 1089,
+          "y": -3,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -14564,7 +14454,7 @@
           "persistentUuid": "b837fb52-72aa-492c-ac2f-6fa420db4dec",
           "width": 0,
           "x": 760,
-          "y": 257,
+          "y": 245,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -14659,8 +14549,8 @@
           "name": "NewSprite4",
           "persistentUuid": "b8cfa586-20ae-4610-8600-95cab129ee67",
           "width": 0,
-          "x": 1016,
-          "y": 254,
+          "x": 1014,
+          "y": 252,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -14967,74 +14857,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 12,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "66b8abfe-3596-4c50-99fd-8321bd2c0d13",
-          "width": 13,
-          "x": 111,
-          "y": 245,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 12,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "2c6f8046-ad8a-47f8-9c02-7bca9b8ddda0",
-          "width": 13,
-          "x": 695,
-          "y": 247,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "78befc62-75a3-494a-a439-227768eca46c",
-          "width": 14,
-          "x": 59,
-          "y": 175,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "8ecb830c-e83d-4227-bdca-926a971c70ab",
-          "width": 14,
-          "x": 691,
-          "y": 150,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 260,
           "keepRatio": true,
           "layer": "",
@@ -15061,6 +14883,74 @@
           "x": 99,
           "y": -166,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "4aec62b2-75f6-48e2-ba8b-c7eb15dd59c0",
+          "width": 10,
+          "x": 61,
+          "y": 183,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "4dbebe43-4dd3-4132-b248-7aeac6c3fe69",
+          "width": 10,
+          "x": 111,
+          "y": 241,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "2c50d2c0-3523-4394-8af5-2522d0386f79",
+          "width": 10,
+          "x": 698,
+          "y": 151,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "476df788-e47d-4387-8732-2e33e693dbf4",
+          "width": 10,
+          "x": 699,
+          "y": 247,
+          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15153,12 +15043,66 @@
             },
             {
               "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "thời_gian",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "xu",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dong ho\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "sand-walk-106366.mp3",
+                "yes",
+                "70",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusic"
               },
               "parameters": [
                 "",
                 "pixel-song-21-72593.mp3",
-                "",
+                "yes",
                 "10",
                 "0.9"
               ]
@@ -15351,30 +15295,6 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"dong ho\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "CompareTimer"
               },
               "parameters": [
@@ -15404,7 +15324,7 @@
                 "thoi_gian",
                 "Text",
                 "=",
-                "\"Time:\" + ToString(GlobalVariable(thời_gian))"
+                "\"Time: \" + ToString(GlobalVariable(thời_gian))"
               ]
             },
             {
@@ -15461,11 +15381,6 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
@@ -15489,6 +15404,17 @@
           "actions": [
             {
               "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Door",
+                "Animation",
+                "=",
+                "\"Opening\""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusic"
               },
               "parameters": [
@@ -15497,17 +15423,6 @@
                 "",
                 "40",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Door",
-                "Animation",
-                "=",
-                "\"Opening\""
               ]
             },
             {
@@ -15568,14 +15483,6 @@
                 },
                 {
                   "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.5"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "PushScene"
                   },
                   "parameters": [
@@ -15629,14 +15536,6 @@
                     "Door",
                     "open",
                     "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.5"
                   ]
                 },
                 {
@@ -15879,142 +15778,6 @@
                 "coin-collect-retro-8-bit-sound-effect-145251.mp3",
                 "",
                 "50",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Right"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "sand-walk-106366.mp3",
-                "",
-                "70",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "sand-walk-106366.mp3",
-                "",
-                "70",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Up"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "sand-walk-106366.mp3",
-                "",
-                "70",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Down"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "sand-walk-106366.mp3",
-                "",
-                "70",
                 ""
               ]
             }
@@ -20570,22 +20333,6 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "SilverCoin",
-          "persistentUuid": "b98f6d3c-9742-449a-8925-950e0c1339e0",
-          "width": 0,
-          "x": 521,
-          "y": 416,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
           "name": "BronzeCoin",
           "persistentUuid": "2fdeaed6-5e31-4290-a638-b7cbe8afeadb",
           "width": 0,
@@ -20766,57 +20513,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "2737ee14-cadb-40ba-adfb-0c4e3446d759",
-          "width": 14,
-          "x": 80,
-          "y": 275,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "952664e6-3021-40b1-9c2c-6355985d615c",
-          "width": 14,
-          "x": 258,
-          "y": 427,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "1c843f66-e054-42a0-b1a9-3f63d57a7c61",
-          "width": 14,
-          "x": 781,
-          "y": 367,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 215,
           "keepRatio": true,
           "layer": "",
@@ -20906,27 +20602,10 @@
           "keepRatio": true,
           "layer": "",
           "name": "FlowerBase",
-          "persistentUuid": "5a724cf2-5899-4b2d-8eb8-5d03f114a099",
-          "width": 10,
-          "x": -48,
-          "y": 160,
-          "zOrder": 36,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 13,
-          "keepRatio": true,
-          "layer": "",
-          "name": "FlowerBase",
           "persistentUuid": "8bffc523-ed2a-4cdb-a1d6-b4c5ba105d6c",
           "width": 10,
-          "x": 407,
-          "y": 200,
+          "x": 972,
+          "y": 522,
           "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
@@ -20942,8 +20621,8 @@
           "name": "Cactus",
           "persistentUuid": "401b32bc-b809-473f-8c67-a8b812a5d5e5",
           "width": 8,
-          "x": 598,
-          "y": 199,
+          "x": 973,
+          "y": 274,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -20962,6 +20641,74 @@
           "x": 67,
           "y": -17,
           "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "c5916579-70ee-43be-b912-16b5c5a2e854",
+          "width": 10,
+          "x": 84,
+          "y": 271,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "386ab7c2-10ff-4500-967b-39f7e38d6be5",
+          "width": 10,
+          "x": 266,
+          "y": 431,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "cc553856-cb9f-43da-a11b-6cf7e4bf2676",
+          "width": 10,
+          "x": 527,
+          "y": 417,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 13,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerBase",
+          "persistentUuid": "961c4406-ee9b-4b1a-8faa-6d12674b0e89",
+          "width": 10,
+          "x": 786,
+          "y": 363,
+          "zOrder": 41,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -21027,7 +20774,7 @@
               "parameters": [
                 "",
                 "pixel-song-21-72593.mp3",
-                "",
+                "yes",
                 "10",
                 "0.9"
               ]
@@ -21038,6 +20785,26 @@
               },
               "parameters": [
                 "NewSprite5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "thời_gian",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "xu",
+                "=",
+                "0"
               ]
             }
           ]
@@ -21331,6 +21098,12 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -24068,57 +23841,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "011cd9a1-9651-4332-87e9-cb332bab6f49",
-          "width": 14,
-          "x": 365,
-          "y": 315,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "892913aa-3e71-4f65-872e-3854ace9eeeb",
-          "width": 14,
-          "x": 536,
-          "y": 334,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "8b48bf81-0bf2-40c2-af16-07ccd1b2f9a5",
-          "width": 14,
-          "x": 784,
-          "y": 485,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
@@ -24145,57 +23867,6 @@
           "x": -260,
           "y": 260,
           "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 10,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "ab8b85e2-34be-44a6-9d5f-1dcca43c811c",
-          "width": 11,
-          "x": 460,
-          "y": 385,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 12,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "03e175a0-6ad2-4962-ba06-dd235ac913e5",
-          "width": 13,
-          "x": 761,
-          "y": 333,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 12,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "7e22db9f-c98a-4e4b-ae8f-fc01ad1a56f9",
-          "width": 13,
-          "x": 687,
-          "y": 413,
-          "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -24337,6 +24008,26 @@
               },
               "parameters": [
                 "NewSprite5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "thời_gian",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "xu",
+                "=",
+                "0"
               ]
             }
           ]
@@ -24654,6 +24345,12 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -25711,7 +25408,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.4307927813134658,
+        "zoomFactor": 1.384119804630723,
         "windowMask": true
       },
       "objectsGroups": [
@@ -27272,108 +26969,6 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 8,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "35291035-ccc0-40b8-b927-8db076c53027",
-          "width": 8,
-          "x": 110,
-          "y": 364,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 12,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "c332483e-b38f-4930-b180-f761c5339874",
-          "width": 13,
-          "x": 349,
-          "y": 412,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 12,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "6e505b16-2571-480a-8478-c59620068f4d",
-          "width": 13,
-          "x": 829,
-          "y": 409,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "5920edfc-8f97-46b4-b347-adb963672ea9",
-          "width": 14,
-          "x": 367,
-          "y": 330,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "52f7f25a-46ae-49b2-b45d-6c6d44cdbc72",
-          "width": 14,
-          "x": 244,
-          "y": 358,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 10,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "d768fba6-187f-4b3c-983a-d4ad60290422",
-          "width": 10,
-          "x": 732,
-          "y": 254,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 270,
           "customSize": true,
           "depth": 1,
@@ -27531,7 +27126,7 @@
               "parameters": [
                 "",
                 "pixel-song-21-72593.mp3",
-                "",
+                "yes",
                 "10",
                 "0.9"
               ]
@@ -27542,6 +27137,26 @@
               },
               "parameters": [
                 "NewSprite5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "thời_gian",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "xu",
+                "=",
+                "0"
               ]
             }
           ]
@@ -27871,6 +27486,12 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -31323,74 +30944,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "992a1ef8-8b57-4b6f-9e6a-613ff397ba0f",
-          "width": 14,
-          "x": 683,
-          "y": 330,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "7ae95ade-7fd1-4ca8-ac46-66a40b9a9e15",
-          "width": 14,
-          "x": 1182,
-          "y": 351,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "4cbe885d-9543-4904-a42e-a8c92a6e3115",
-          "width": 14,
-          "x": 1241,
-          "y": 424,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 14,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Stone2",
-          "persistentUuid": "9921a21d-07d9-47ae-a63c-bb2eeb39d058",
-          "width": 14,
-          "x": 444,
-          "y": 379,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
@@ -31499,7 +31052,7 @@
               "parameters": [
                 "",
                 "pixel-song-21-72593.mp3",
-                "",
+                "yes",
                 "10",
                 "0.9"
               ]
@@ -31510,6 +31063,26 @@
               },
               "parameters": [
                 "NewSprite5"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "thời_gian",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "xu",
+                "=",
+                "0"
               ]
             }
           ]
@@ -34370,7 +33943,14 @@
           "texture": "NewTiledSprite",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": []
         },
@@ -34381,7 +33961,14 @@
           "texture": "NewTiledSprite3",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": []
         },
@@ -34392,7 +33979,14 @@
           "texture": "NewTiledSprite4",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": []
         },
@@ -34983,18 +34577,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "completeLine",
-                        "0",
-                        "0",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "PrimitiveDrawing::LineV2"
                       },
                       "parameters": [
@@ -35075,12 +34657,24 @@
                         },
                         {
                           "type": {
-                            "value": "ModVarScene"
+                            "value": "SetObjectVariableAsBoolean"
                           },
                           "parameters": [
-                            "score",
-                            "+",
-                            "1"
+                            "Drawvang",
+                            "check",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlayMusic"
+                          },
+                          "parameters": [
+                            "",
+                            "dấu tick ở gane.mp3",
+                            "",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -35152,12 +34746,24 @@
                         },
                         {
                           "type": {
-                            "value": "ModVarScene"
+                            "value": "SetObjectVariableAsBoolean"
                           },
                           "parameters": [
-                            "score",
-                            "+",
-                            "1"
+                            "drawxanh",
+                            "check",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlayMusic"
+                          },
+                          "parameters": [
+                            "",
+                            "dấu tick ở gane.mp3",
+                            "",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -35229,12 +34835,24 @@
                         },
                         {
                           "type": {
-                            "value": "ModVarScene"
+                            "value": "SetObjectVariableAsBoolean"
                           },
                           "parameters": [
-                            "score",
-                            "+",
-                            "1"
+                            "Drawxanhduong",
+                            "check",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlayMusic"
+                          },
+                          "parameters": [
+                            "",
+                            "dấu tick ở gane.mp3",
+                            "",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -35265,12 +34883,40 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "score",
-                ">=",
-                "3"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Drawvang",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Drawxanhduong",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "drawxanh",
+                    "check",
+                    "True"
+                  ]
+                }
               ]
             },
             {
@@ -36997,15 +36643,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"dong ho\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -37041,15 +36678,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"dong ho\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -37083,15 +36711,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"dong ho\""
-                  ]
-                },
                 {
                   "type": {
                     "value": "ModVarGlobal"
@@ -37793,7 +37412,14 @@
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "countdown",
+          "type": "number",
+          "value": 8
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -37931,8 +37557,55 @@
               "parameters": [
                 "",
                 "\"dong ho\"",
-                ">",
-                "8"
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "countdown",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dong ho\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "dung_yen",
+                "Text",
+                "=",
+                "\"You must stand still for \" + ToString(countdown) + \" seconds\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "countdown",
+                "<=",
+                "0"
               ]
             }
           ],
@@ -38036,11 +37709,6 @@
               "actions": []
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -39110,8 +38778,8 @@
           "name": "tieu_de_tim_do",
           "persistentUuid": "7538a08f-1fdb-40ae-aab9-533b72272f16",
           "width": 0,
-          "x": 247,
-          "y": 41,
+          "x": 58,
+          "y": 43,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -39539,7 +39207,14 @@
           "name": "cafecham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -39600,7 +39275,14 @@
           "name": "anhcham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -39661,7 +39343,14 @@
           "name": "banphimcham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -39722,7 +39411,14 @@
           "name": "vocham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -40208,12 +39904,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "vocham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -40286,12 +39982,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "cafecham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -40364,12 +40060,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "anhcham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -40442,12 +40138,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "banphimcham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -40457,12 +40153,50 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "score",
-                ">=",
-                "4"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "vocham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "cafecham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "anhcham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "banphimcham",
+                    "check",
+                    "True"
+                  ]
+                }
               ]
             },
             {
@@ -41036,8 +40770,8 @@
           "name": "tieu_de_tim_do",
           "persistentUuid": "ab211eb1-c001-40f7-9c4e-09d77a6ad628",
           "width": 0,
-          "x": 218,
-          "y": 53,
+          "x": 59,
+          "y": 35,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -41068,7 +40802,14 @@
           "name": "chocham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -41190,7 +40931,14 @@
           "name": "tvcham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -41251,7 +40999,14 @@
           "name": "lichcham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -41312,7 +41067,14 @@
           "name": "caycham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -41795,12 +41557,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "chocham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -41873,12 +41635,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "lichcham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -41951,12 +41713,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "tvcham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -42029,12 +41791,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "caycham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -42071,12 +41833,50 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "score",
-                ">=",
-                "4"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "chocham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "tvcham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "lichcham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "caycham",
+                    "check",
+                    "True"
+                  ]
+                }
               ]
             },
             {
@@ -42332,8 +42132,8 @@
           "name": "tieu_de_tim_do",
           "persistentUuid": "1537e876-27f6-401b-9efc-ca0156b012b8",
           "width": 0,
-          "x": 251,
-          "y": 44,
+          "x": 72,
+          "y": 36,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -42819,7 +42619,14 @@
           "name": "bancham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -42962,7 +42769,14 @@
           "name": "giuongcham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -43023,7 +42837,14 @@
           "name": "maytinhcham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -43084,7 +42905,14 @@
           "name": "dencham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -43403,12 +43231,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "bancham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -43481,12 +43309,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "dencham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -43559,12 +43387,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "maytinhcham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -43637,12 +43465,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "giuongcham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -43679,12 +43507,50 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "score",
-                ">=",
-                "4"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "bancham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "giuongcham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "maytinhcham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "dencham",
+                    "check",
+                    "True"
+                  ]
+                }
               ]
             },
             {
@@ -44204,8 +44070,8 @@
           "name": "tieu_de_tim_do",
           "persistentUuid": "4fb8460f-6a47-4c70-8a6b-445d214f6f3d",
           "width": 0,
-          "x": 244,
-          "y": 45,
+          "x": 63,
+          "y": 36,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -44331,7 +44197,14 @@
           "name": "xecham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -44556,7 +44429,14 @@
           "name": "ghecham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -44617,7 +44497,14 @@
           "name": "maycham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -44678,7 +44565,14 @@
           "name": "traccham",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -45002,20 +44896,13 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "xecham",
+                "check",
+                "True"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ]
         },
@@ -45087,12 +44974,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "ghecham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -45165,12 +45052,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "maycham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -45243,12 +45130,12 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "score",
-                "+",
-                "1"
+                "traccham",
+                "check",
+                "True"
               ]
             }
           ]
@@ -45285,12 +45172,50 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "score",
-                ">=",
-                "4"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ghecham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "xecham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "maycham",
+                    "check",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "traccham",
+                    "check",
+                    "True"
+                  ]
+                }
               ]
             },
             {
@@ -46077,7 +46002,7 @@
           "width": 1280,
           "x": 2,
           "y": 0,
-          "zOrder": 9,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
