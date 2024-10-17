@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - 'main'
+
+permissions:
+  contents: write
+
+jobs:
+  create_release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install GitHub CLI
+      run: sudo apt install -y gh
+
+    - name: Authenticate GitHub CLI
+      run: gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
+
+    - name: Check if tag exists
+      id: check_tag
+      run: |
+        if gh release view "latest" >/dev/null 2>&1; then
+          gh release delete "latest" -y
+        fi
+    - name: Create GitHub Release
+      run: |
+        gh release create "latest" --title "latest"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
